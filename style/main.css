@@ -2,16 +2,17 @@
   --dark: #374151;
   --darker: #1F2937;
   --darkest: #111827;
-  --light: #EEE;
   --gray: #6B7280;
+  --light: #EEE;
   --pink: #EC4899;
-  --purple: #8B5CF6;
+  --purple: #8B5Cf6;
 }
 
 *{
   box-sizing: border-box;
   margin: 0;
-  font-family: 'Fira sans',sans-serif;
+  font-family: "Fira sans", sans-serif;
+  
 }
 
 body {
@@ -19,36 +20,4 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background: var(--dark);
-  color: white; 
-}
-
-heading {
-  padding: 2rem 1rem;
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  font-weight: 300;
-  color: var(--gray);
-  margin-bottom: 1rem;
-
-}
-
-#tasks {
-  display: flex;
-}
-
-#new-todo-submit {
-  flex: 1 1 0%;
-}
-
-input, button { 
-  appearance: none;
-  border: none;
-  outline: none;
-  background: none;
-
 }
