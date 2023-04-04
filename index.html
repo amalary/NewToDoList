@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List 2023</title>
+  <link rel="stylesheet" href="style/main.css">
+
+</head>
+<body>
+
+  <header>
+    <h1>Todo List 2023</h1>
+    <form action=""><input type="text" id = "new-todo-input" placeholder="What's next ?"></form>
+    <input type="submit" id = "new-todo-submit" value = "Add Task">
+  </header>
+
+  <main>
+    <section class = "task-list">
+      <h2>Tasks</h2>
+
+      <div id="tasks">
+
+        <div class="task">
+          <div class="content">
+            <input type="text"
+            class = "text"
+            value = "My shiny task"
+            readonly>
+          </div>
+        </div>
+        <div class="actions">
+          <button class="edit">Edit</button>
+          <button class="delete">Delete</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <script src = "script/app.js"></script>
+</body>
+</html>
