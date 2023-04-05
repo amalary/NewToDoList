@@ -62,8 +62,12 @@ window.addEventListener('load', ()=>{
         task_input_element.setAttribute("readonly","readonly");
         task_edit_element.innerHTML = "Edit";
       }
-    })
+    });
 
-  })
-})
+    task_delete_element.addEventListener('click',()=>{
+      list_element.removeChild(task_element);
+    });
+
+  });
+});
 
