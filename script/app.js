@@ -50,6 +50,20 @@ window.addEventListener('load', ()=>{
     task_element.appendChild(task_actions_element);
     list_element.appendChild(task_element);
 
+    input.value = ""
+
+    task_edit_element.addEventListener('click',()=>{ 
+      if(task_edit_element.innerText.toLowerCase()== "edit"){
+        task_input_element.removeAttribute("readonly");
+        task_input_element.focus();
+        task_edit_element.innerHTML = "Save";
+      }
+      else{
+        task_input_element.setAttribute("readonly","readonly");
+        task_edit_element.innerHTML = "Edit";
+      }
+    })
+
   })
 })
 
